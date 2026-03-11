@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42 Exam Prep — Rank 02</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-42">42</span>
+        <span class="logo-text">Exam Prep</span>
+      </div>
+      <nav class="rank-tabs">
+        <button class="rank-tab active" data-rank="2">Rank 02</button>
+        <button class="rank-tab disabled" data-rank="3">Rank 03 <span class="badge">Soon</span></button>
+        <button class="rank-tab disabled" data-rank="4">Rank 04 <span class="badge">Soon</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Coming Soon overlay for Rank 3/4 -->
+    <div id="coming-soon" class="coming-soon hidden">
+      <div class="coming-soon-content">
+        <span class="coming-soon-icon">🚧</span>
+        <h2>Coming Soon</h2>
+        <p>This exam rank is being prepared. Check back later!</p>
+        <button onclick="selectRank(2)">← Back to Rank 02</button>
+      </div>
+    </div>
+
+    <!-- Rank 02 content -->
+    <div id="rank2-content">
+      <div class="controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search" placeholder="Search exercises..." autocomplete="off">
+        </div>
+        <div class="level-filters">
+          <button class="level-btn active" data-level="all">All <span class="count" id="count-all"></span></button>
+          <button class="level-btn" data-level="1">Level 1 <span class="count" id="count-1"></span></button>
+          <button class="level-btn" data-level="2">Level 2 <span class="count" id="count-2"></span></button>
+          <button class="level-btn" data-level="3">Level 3 <span class="count" id="count-3"></span></button>
+          <button class="level-btn" data-level="4">Level 4 <span class="count" id="count-4"></span></button>
+        </div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div class="progress-info">
+          <span>Progress</span>
+          <span id="progress-text">0 / 57</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="exercises" class="exercises"></div>
+      <div id="no-results" class="no-results hidden">
+        <span>😕</span>
+        <p>No exercises found matching your search.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made for 42 students with ❤️ — Not affiliated with 42 Network</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
