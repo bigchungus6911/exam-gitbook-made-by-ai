@@ -2,7 +2,7 @@
 
 A beautiful, interactive study website for 42 School Exam Rank 02. All 57 exercises with the **smallest, easiest-to-memorize** C solutions.
 
-## 🚀 Deploy on Vercel
+## Deploy on Vercel
 
 1. Create a new repo on GitHub
 2. Push all files (`index.html`, `style.css`, `data.js`, `app.js`) to the repo
@@ -15,16 +15,16 @@ npm i -g vercel
 vercel
 ```
 
-## 📁 Files
+## Files
 - `index.html` — Main page
 - `style.css` — Dark theme styling
 - `data.js` — All 57 exercises with solutions and explanations
 - `app.js` — Interactive logic (filter, search, expand, progress)
 
-## ✅ Features
-- 🌙 Dark hacker-themed UI
-- 🔍 Real-time search
-- 📊 Level filters (1–4)
-- ✅ Progress tracking (localStorage)
-- 📱 Fully responsive
-- 🔮 Coming Soon placeholders for Rank 03 & 04
+## Features
+-  Dark hacker-themed UI
+-  Real-time search
+-  Level filters (1–4)
+-  Progress tracking (localStorage)
+-  Fully responsive
+-  Coming Soon placeholders for Rank 03 & 04
